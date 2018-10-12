@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>text</key>
+		<string>请问画笔还好用吗？</string>
+		<key>time</key>
+		<string>昨天20:18</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>我想买几只，可以便一点吗</string>
+		<key>time</key>
+		<string>昨天20:18</string>
+		<key>type</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>本店商品都是原厂直销的，活动期间都是按成本价出售的</string>
+		<key>time</key>
+		<string>昨天20:19</string>
+		<key>type</key>
+		<integer>0</integer>
+	</dict>
+</array>
+</plist>

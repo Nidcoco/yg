@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="jJ3-xe-qbm" customClass="YGFriendCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jJ3-xe-qbm" id="Oeu-Dl-pyt">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other" translatesAutoresizingMaskIntoConstraints="NO" id="P8x-9U-Lm6">
+                        <rect key="frame" x="8" y="9" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Swi-SF-BiM"/>
+                            <constraint firstAttribute="height" constant="50" id="nib-66-lpL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="消息中心" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8a-nF-UK4">
+                        <rect key="frame" x="66" y="15" width="64" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="[转账]向你转账998.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1YU-uJ-1p4">
+                        <rect key="frame" x="66" y="36" width="133" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="昨天" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yp4-5I-NcQ">
+                        <rect key="frame" x="288" y="9" width="24" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.66666668650000005" green="0.66666668650000005" blue="0.66666668650000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yp4-5I-NcQ" firstAttribute="top" secondItem="P8x-9U-Lm6" secondAttribute="top" id="9ya-s7-0Uc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Yp4-5I-NcQ" secondAttribute="trailing" id="BlQ-tk-BKv"/>
+                    <constraint firstItem="P8x-9U-Lm6" firstAttribute="leading" secondItem="Oeu-Dl-pyt" secondAttribute="leading" constant="8" id="L1x-Ho-wun"/>
+                    <constraint firstItem="1YU-uJ-1p4" firstAttribute="leading" secondItem="P8x-9U-Lm6" secondAttribute="trailing" constant="8" id="UOf-7K-E6e"/>
+                    <constraint firstItem="P8x-9U-Lm6" firstAttribute="centerY" secondItem="Oeu-Dl-pyt" secondAttribute="centerY" id="YAW-g1-8sr"/>
+                    <constraint firstItem="R8a-nF-UK4" firstAttribute="leading" secondItem="P8x-9U-Lm6" secondAttribute="trailing" constant="8" id="mQn-gt-2IH"/>
+                    <constraint firstItem="R8a-nF-UK4" firstAttribute="top" secondItem="P8x-9U-Lm6" secondAttribute="top" constant="6" id="puD-Gu-ZEX"/>
+                    <constraint firstItem="1YU-uJ-1p4" firstAttribute="bottom" secondItem="P8x-9U-Lm6" secondAttribute="bottom" constant="-6" id="xr6-PR-uXp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="P8x-9U-Lm6" id="wMx-NX-vxP"/>
+                <outlet property="subTitleView" destination="1YU-uJ-1p4" id="mA3-A3-KjO"/>
+                <outlet property="timeView" destination="Yp4-5I-NcQ" id="0bA-ph-p9u"/>
+                <outlet property="titleView" destination="R8a-nF-UK4" id="K0Y-Kc-NJD"/>
+            </connections>
+            <point key="canvasLocation" x="67" y="57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="other" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_yg {
+  umbrella header "Pods-yg-umbrella.h"
+
+  export *
+  module * { export * }
+}
