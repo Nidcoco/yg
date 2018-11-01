@@ -219,8 +219,6 @@
     
     [self.tableView scrollToRowAtIndexPath:index atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     
-    
-    
 }
 
 

@@ -11,5 +11,6 @@ target 'yg' do
   pod 'ReactiveObjC'
   pod 'AFNetworking', '~> 3.0'
   pod 'OHMySQL'
-  pod 'MJExtension', '~> 3.0.7'
+  pod 'SDWebImage'
+  pod 'MJRefresh'
 end

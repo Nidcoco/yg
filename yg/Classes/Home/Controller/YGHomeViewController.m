@@ -10,7 +10,7 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "ZWMSegmentController.h"
-#import "ThirdViewController.h"
+#import "YGPageController.h"
 
 @interface YGHomeViewController ()
 
@@ -29,8 +29,8 @@
 
 - (void)test{
     self.navigationController.navigationBar.translucent = NO;
-    
-    FirstViewController *f = [[FirstViewController alloc] init];
+    UIStoryboard *homePage = [UIStoryboard storyboardWithName:@"Chance" bundle:nil];
+    FirstViewController *f = [homePage instantiateInitialViewController];
     SecondViewController *s = [[SecondViewController alloc] init];
     FirstViewController *f1 = [[FirstViewController alloc] init];
     SecondViewController *s1 = [[SecondViewController alloc] init];
@@ -38,10 +38,10 @@
     SecondViewController *s2 = [[SecondViewController alloc] init];
     FirstViewController *f3 = [[FirstViewController alloc] init];
     SecondViewController *s3 = [[SecondViewController alloc] init];
-    ThirdViewController *t = [[ThirdViewController alloc] init];
+    YGPageController *t = [[YGPageController alloc] init];
     NSArray *array = @[f,s,f1,s1,f2,s2,f3,s3,t];
     
-    self.segmentVC = [[ZWMSegmentController alloc] initWithFrame:self.view.bounds titles:@[@"尤克里里",@"耐克",@"马利",@"青竹",@"米娅",@"青年",@"得力",@"毕加索",@"马良"]];
+    self.segmentVC = [[ZWMSegmentController alloc] initWithFrame:self.view.bounds titles:@[@"精选",@"耐克",@"马利",@"青竹",@"米娅",@"青年",@"得力",@"毕加索",@"马良"]];
     self.segmentVC.segmentView.showSeparateLine = YES;
     self.segmentVC.segmentView.segmentTintColor = [UIColor blackColor];
     self.segmentVC.viewControllers = [array copy];
